@@ -1,0 +1,19 @@
+## Internal CSS – Specificity Example
+
+This example uses Internal CSS written inside the `<style>` tag.
+
+The element has both:
+- A class selector (.box)
+- An ID selector (#special)
+
+Even though both apply styles, the ID selector has higher priority.
+That is why the background color becomes red.
+
+### Additional Notes:
+- A div without width/height only takes space of its content.
+- To show a proper box, we set width:200px and height:100px.
+- We also used flexbox to center the text "Saif" inside the box.
+
+### Key takeaway
+CSS follows a priority system:
+Inline CSS > ID selector > Class selector
