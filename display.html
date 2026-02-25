@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY TYPE</title>
+</head>
+<body>
+
+    <h1>Inline</h1>
+    <p>Does not start on a new line.Width and height cannot be set explicitly (they depend on content).Padding, margin vertically may not work as expected.</p>
+    <p>
+  <span style="background: yellow;">Inline 1</span>
+  <span style="background: orange;">Inline 2</span>
+</p>
+
+    <h1>Inline-block</h1>
+    <p>Appears inline (side by side) like inline.But behaves like block regarding width, height, padding, and margin</p>
+  <p> <span style="display: inline-block; width: 100px; height: 50px; background: lightblue;">Box 1</span>
+  <span style="display: inline-block; width: 100px; height: 50px; background: lightgreen;">Box 2</span>
+</p>
+
+    <h1>Block</h1>
+    <p>Always start on new line.Width automatically takes 100% of the parent container (unless set).
+Padding, margin, width, height all work.</p>
+    <div style="background: pink; width: 100px; height: 50px;">Block 1</div>
+<div style="background: violet; width: 100px; height: 50px;">Block 2</div>
+
+</body>
+</html>
