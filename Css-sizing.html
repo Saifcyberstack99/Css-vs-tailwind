@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units: px, %, em, rem</title>
+  <style>
+    html { font-size: 16px; }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+
+    h1, h2 { text-align: center; color: #333; }
+    .container {
+      width: 420px; /* thoda wider container */
+      font-size: 20px; /* Parent font-size for em examples */
+      background: #f0f0f0;
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .box {
+      margin: 15px 0;
+      text-align: center;
+      line-height: 1.4;
+      color: white;
+      border-radius: 5px;
+      padding: 10px;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60px; /* minimum height for readability */
+    }
+
+    .px { width: 150px; background: #3498db; }         /* Fixed px */
+    .percent { width: 50%; background: #e74c3c; }      /* % of parent */
+    .em { width: 150px; background: #2ecc71; }          /* 2 × parent font-size */
+    .rem { width: 150px; background: #f1c40f; color: black; } /* 2 × root font-size */
+
+  </style>
+</head>
+<body>
+
+<h1>CSS Units Practice</h1>
+<h2>px, %, em, rem Boxes</h2>
+
+<div class="container">
+  <div class="box px">100px width & 50px height</div>
+  <div class="box percent">50% width → 200px</div>
+  <div class="box em">2em height → 40px</div>
+  <div class="box rem">2rem height → 32px</div>
+</div>
+
+<h2 style="text-align:center;">Quick Rules / Use Cases</h2>
+<ul style="max-width: 600px; margin: 0 auto; color: #333; font-size: 14px;">
+  <li><strong>px:</strong> Fixed design elements, icons, borders, small components.</li>
+  <li><strong>%:</strong> Responsive layouts, widths, heights, flexible containers.</li>
+  <li><strong>em:</strong> Component-based spacing, typography relative to parent.</li>
+  <li><strong>rem:</strong> Global spacing, consistent font sizes, scalable typography.</li>
+</ul>
+</body>
+</html>
