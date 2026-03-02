@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Units Example</title>
+<style>
+  html { font-size: 20px; } /* Root font-size for rem */
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background: #f9f9f9;
+  }
+
+  /* 1️⃣ Parent container (Card) */
+  .card {
+    width: 50%; 
+    height: 80%;             /* % → responsive width relative to body */
+    padding: 2em;            /* em → padding relative to card font-size */
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  /* 2️⃣ Child element: Profile Image */
+  .profile-img {
+    width: 400px;             /* px → fixed size */
+    height: 400px;            /* px → fixed size */
+    border-radius: 50%;       /* Circle image */
+    display: block;
+    margin: 0 auto 15px auto;
+    background: lightcoral;   /* placeholder color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  /* 3️⃣ Heading inside card */
+  h2 {
+    font-size: 2rem;          /* rem → consistent across site */
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  /* 4️⃣ Paragraph inside card */
+  p {
+    font-size: 1.2em;         /* em → relative to parent card font-size */
+    line-height: 1.5;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <!-- Profile Image (px) -->
+  <div class="profile-img"></div>
+
+  <!-- Heading (rem) -->
+  <h2>Saif</h2>
+
+  <!-- Description (em) -->
+  <p>This is a short description about Saif. The paragraph uses em units for font-size, so it scales with the card font-size.</p>
+</div>
+
+</body>
+</html>
